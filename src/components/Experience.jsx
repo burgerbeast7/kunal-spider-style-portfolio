@@ -8,32 +8,36 @@ const EXPERIENCES = [
   {
     company: "Bluestock Fintech",
     role: "Software Development Engineer Intern",
-    period: "2025",
+    period: "Apr 2025 – May 2025",
     description: [
-      "Built full-stack IPO web application",
-      "JWT authentication implementation",
-      "PostgreSQL schema design",
-      "AWS deployment & React frontend"
+      "Built production-grade full-stack IPO Web App using Django REST Framework, React.js, PostgreSQL",
+      "Designed secure JWT-based auth and role-based access control (RBAC)",
+      "Architected relational DB schema across 5+ interconnected entities with optimized queries",
+      "Integrated document management system for DRHP/RHP PDF downloads",
+      "Built responsive mobile-first frontend with React.js + Tailwind CSS",
+      "Deployed to AWS EC2 + Vercel with CI/CD pipelines",
+      "Collaborated in Agile sprint cycles using Git/GitHub with daily standups"
     ]
   },
   {
     company: "GrowthLink",
     role: "Web Development Intern",
-    period: "2025",
+    period: "Mar 2025 – Apr 2025",
     description: [
-      "Built responsive web apps",
-      "Improved performance by 18%",
-      "Fixed cross-browser issues"
+      "Developed and deployed 3+ responsive web applications using HTML5, JS, Bootstrap",
+      "Improved website performance by 18% via lazy loading, image optimization, asset minification",
+      "Resolved cross-browser compatibility issues, reducing UI bug reports by ~30%",
+      "Delivered pixel-accurate Figma implementations in collaboration with design & QA teams"
     ]
   },
   {
-    company: "Freelance",
-    role: "Tech Content Creator",
-    period: "Ongoing",
+    company: "Freelance Tech Content Creator",
+    role: "Self-Employed",
+    period: "Dec 2023 – Apr 2024",
     description: [
-      "Wrote 20+ technical tutorials",
-      "SEO optimized content",
-      "Cloud + Django topics"
+      "Authored 20+ technical tutorials on cloud computing, Django REST APIs, full-stack development",
+      "Grew organic site traffic by 20% through SEO and structured content strategy",
+      "Managed end-to-end content lifecycle: research, writing, publishing, analytics"
     ]
   }
 ];

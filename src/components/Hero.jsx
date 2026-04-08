@@ -274,15 +274,16 @@ export default function Hero() {
           {/* Right Side: Description and CTA */}
           <div className="flex-1 max-w-xl text-left md:text-right flex flex-col items-start md:items-end">
             <p className="text-lg md:text-xl text-gray-300 drop-shadow-xl font-light tracking-wide leading-relaxed mb-10 max-w-md">
-              Engineering high-performance backends with Django and fluid frontends with React. Scaling the future on AWS.
+              Specialized in Django, React.js, and scaling high-performance full-stack applications on AWS.
             </p>
             
             <div className="flex flex-wrap gap-4 justify-start md:justify-end pointer-events-auto">
               <a href="#projects" className="px-8 py-3 rounded-full bg-white text-black text-[10px] tracking-[0.3em] uppercase font-bold hover:bg-red-600 hover:text-white transition-all duration-500 shadow-2xl">
                 View Missions
               </a>
-              <a href="#contact" className="px-8 py-3 rounded-full border border-white/20 text-white text-[10px] tracking-[0.3em] uppercase font-bold hover:bg-white/10 backdrop-blur-md transition-all duration-500">
-                Contact
+              <a href="/resume.pdf" download className="px-8 py-3 rounded-full border border-white/20 text-white text-[10px] tracking-[0.3em] uppercase font-bold hover:bg-white/10 backdrop-blur-md transition-all duration-500 flex items-center gap-2 group/cv">
+                <span>Download CV</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" className="transform group-hover/cv:translate-y-0.5 transition-transform"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
               </a>
             </div>
           </div>

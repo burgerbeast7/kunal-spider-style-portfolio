@@ -146,18 +146,22 @@ export default function About() {
 
           <div className="overflow-hidden">
             <p className="stagger-reveal text-lg md:text-xl text-gray-400 font-light leading-relaxed max-w-xl">
-              Results-driven Computer Science student (BTech, HPTU '27) with a hands-on approach to building scalable full-stack applications. I specialize in Python/Django backend systems, React.js frontends, and AWS cloud deployments, ensuring robust performance and secure authentication at every layer.
+              Results-driven Computer Science undergraduate (BTech, HPTU '27) with hands-on 
+              experience building scalable full-stack applications and REST APIs. Skilled in Python, 
+              Django, React.js, and PostgreSQL with proven ability to deliver production-ready solutions 
+              in fast-paced environments. Strong focus on backend systems, secure authentication, 
+              cloud deployment, and data structures & algorithms.
             </p>
           </div>
 
           {/* Education Block */}
           <div className="overflow-hidden">
-            <div className="stagger-reveal border-l-2 border-white/20 pl-6 py-2 mb-8">
-              <h3 className="text-white text-xl font-bold font-sans">B.Tech — Computer Science & Engineering</h3>
-              <p className="text-gray-400 text-sm">Himachal Pradesh Technical University (2023–2027)</p>
-              <div className="flex flex-wrap gap-2 mt-3">
-                {["DSA", "Operating Systems", "DBMS", "Cloud Computing", "Computer Networks", "OOP"].map(course => (
-                  <span key={course} className="text-[10px] uppercase tracking-widest px-2 py-1 bg-white/5 border border-white/10 rounded text-gray-400">
+            <div className="stagger-reveal border-l-2 border-red-500/50 pl-6 py-2 mb-8">
+              <h3 className="text-white text-xl font-bold font-sans tracking-tight">Bachelor of Technology — Computer Science & Engineering</h3>
+              <p className="text-gray-400 text-sm font-mono tracking-wider">[ HPTU, India // Aug 2023 – Sep 2027 ]</p>
+              <div className="flex flex-wrap gap-2 mt-4">
+                {["DSA", "Operating Systems", "DBMS", "Cloud Computing", "Computer Networks", "OOP", "Discrete Math"].map(course => (
+                  <span key={course} className="text-[9px] uppercase tracking-widest px-2 py-1 bg-white/5 border border-white/10 rounded text-gray-500">
                     {course}
                   </span>
                 ))}
@@ -165,20 +169,19 @@ export default function About() {
             </div>
           </div>
 
-          {/* Expertise Highlights */}
-          <div className="overflow-hidden">
-            <div className="stagger-reveal grid grid-cols-2 gap-x-8 gap-y-4 pt-4 border-t border-white/10 max-w-xl">
+          {/* New Certifications Badge Section */}
+          <div className="overflow-hidden pt-4">
+            <p className="stagger-reveal text-red-500 font-mono text-[10px] uppercase tracking-[0.3em] mb-4">Verification_Records // Certifications</p>
+            <div className="grid grid-cols-2 gap-4 stagger-reveal">
               {[
-                "Scalable REST APIs", 
-                "Cloud Architecture (AWS)", 
-                "Secure JWT Auth", 
-                "Clean System Design"
-              ].map((skill, i) => (
-                <div key={i} className="flex items-center space-x-3 group">
-                  <div className="w-1.5 h-1.5 rounded-full bg-white/20 group-hover:bg-red-500 transition-colors duration-300" />
-                  <span className="text-gray-300 text-sm md:text-base font-medium tracking-wide uppercase group-hover:text-white transition-colors duration-300">
-                    {skill}
-                  </span>
+                { name: "AWS Cloud Essentials", issuer: "AWS" },
+                { name: "Cloud Security for Executives", issuer: "LinkedIn" },
+                { name: "Play Store Listing", issuer: "Google" },
+                { name: "Instagram Clone", issuer: "Cuvette" }
+              ].map((cert, i) => (
+                <div key={i} className="group bg-white/5 border border-white/5 p-3 rounded-lg hover:border-red-500/30 transition-all duration-300">
+                  <p className="text-[10px] text-gray-500 font-mono mb-1">{cert.issuer}</p>
+                  <p className="text-xs text-white font-bold tracking-tight">{cert.name}</p>
                 </div>
               ))}
             </div>
@@ -186,9 +189,9 @@ export default function About() {
 
           {/* Quote Block */}
           <div className="overflow-hidden mt-6">
-            <blockquote className="stagger-reveal border-l-2 border-red-500/50 pl-6 py-2">
-              <p className="text-xl md:text-2xl text-gray-200 font-serif italic">
-                “Building the bone, the muscle, <br /> and the skin of the digital web.”
+            <blockquote className="stagger-reveal border-l-2 border-white/20 pl-6 py-2">
+              <p className="text-xl md:text-2xl text-gray-300 font-serif italic">
+                “Engineering the future, <br /> one commit at a time.”
               </p>
             </blockquote>
           </div>

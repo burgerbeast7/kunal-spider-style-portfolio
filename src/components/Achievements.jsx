@@ -5,10 +5,10 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const ACHIEVEMENTS = [
-  { title: "University Hackathon Winner", icon: "🏆" },
-  { title: "AWS Cloud Project Recognition", icon: "☁️" },
-  { title: "Open Source Contributor", icon: "✨" },
-  { title: "31 LinkedIn Verified Skills", icon: "🏅" }
+  { title: "Hackathon Winner", desc: "Won university hackathon for innovative problem-solving at HPTU.", icon: "🏆" },
+  { title: "AWS Cost Optimizer", desc: "Achieved ~15% resource cost reduction via automated scaling.", icon: "☁️" },
+  { title: "Technical Author", desc: "Published 20+ specialized tutorials on cloud & full-stack development.", icon: "📚" },
+  { title: "LinkedIn Verified", desc: "31 technical skills verified through professional assessments.", icon: "🏅" }
 ];
 
 export default function Achievements() {
@@ -41,7 +41,8 @@ export default function Achievements() {
         {ACHIEVEMENTS.map((ach, i) => (
           <div key={i} className="ach-card bg-white/5 border border-white/5 p-6 rounded-2xl flex flex-col items-center text-center group hover:border-red-500/30 transition-all duration-500">
             <span className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">{ach.icon}</span>
-            <h3 className="text-white text-sm font-bold tracking-tight uppercase">{ach.title}</h3>
+            <h3 className="text-white text-sm font-bold tracking-tight uppercase mb-2">{ach.title}</h3>
+            <p className="text-[10px] text-gray-500 font-mono tracking-tight leading-relaxed">{ach.desc}</p>
           </div>
         ))}
       </div>
