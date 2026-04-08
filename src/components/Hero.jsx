@@ -237,6 +237,7 @@ export default function Hero() {
       <div 
         ref={containerRef} 
         className="absolute inset-0 z-0 select-none"
+        style={{ willChange: 'transform, opacity' }}
       />
       
       {/* Custom Cursor / Light Bloom Overlay */}

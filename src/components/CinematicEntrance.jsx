@@ -75,7 +75,7 @@ export default function CinematicEntrance({ onStarted }) {
         ref={audioRef} 
         src="/audio/spider_man.mp3" 
         loop 
-        preload="auto"
+        preload="metadata"
       />
       
       {!hasStarted && (

@@ -1,15 +1,17 @@
-import React, { useState } from 'react';
-import Hero from './components/Hero';
+import React, { useState, Suspense, lazy } from 'react';
 import Navbar from './components/Navbar';
-import About from './components/About';
-import Skills from './components/Skills';
-import Experience from './components/Experience';
-import Achievements from './components/Achievements';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Hero from './components/Hero';
 import CinematicEntrance from './components/CinematicEntrance';
 import SmoothScroll from './components/SmoothScroll';
+import Footer from './components/Footer';
+
+// Lazy load sections below the fold
+const About = lazy(() => import('./components/About'));
+const Skills = lazy(() => import('./components/Skills'));
+const Experience = lazy(() => import('./components/Experience'));
+const Achievements = lazy(() => import('./components/Achievements'));
+const Projects = lazy(() => import('./components/Projects'));
+const Contact = lazy(() => import('./components/Contact'));
 
 function App() {
   const [showContent, setShowContent] = useState(false);
@@ -26,12 +28,14 @@ function App() {
         <Hero />
         
         <div className="space-y-32 md:space-y-48 pb-32">
-          <About />
-          <Skills />
-          <Experience />
-          <Achievements />
-          <Projects />
-          <Contact />
+          <Suspense fallback={<div className="h-screen flex items-center justify-center text-red-500 font-mono text-xs uppercase tracking-widest animate-pulse">Loading Mission Data...</div>}>
+            <About />
+            <Skills />
+            <Experience />
+            <Achievements />
+            <Projects />
+            <Contact />
+          </Suspense>
         </div>
 
         <Footer />
